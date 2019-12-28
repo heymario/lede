@@ -109,8 +109,8 @@ jobs:
           # CONFIG_TARGET_ramips_mt7621=y
           CONFIG_TARGET_ramips_mt7620=y
           # CONFIG_TARGET_ramips_mt7621_DEVICE_d-team_newifi-d2=y
-          CONFIG_TARGET_ramips_mt7620_DEVICE_xiaomi_miwifi-r3=y
-          # CONFIG_TARGET_ramips_mt7620_DEVICE_psg1218a=y
+          # CONFIG_TARGET_ramips_mt7620_DEVICE_xiaomi_miwifi-r3=y
+          CONFIG_TARGET_ramips_mt7620_DEVICE_psg1218a=y
           EOF
 
           # 固件压缩:
@@ -140,22 +140,22 @@ jobs:
           # EOF
 
           # USB3.0支持:
-          cat >> .config <<EOF
-          CONFIG_PACKAGE_kmod-usb-ohci=y
-          CONFIG_PACKAGE_kmod-usb-ohci-pci=y
-          CONFIG_PACKAGE_kmod-usb2=y
-          CONFIG_PACKAGE_kmod-usb2-pci=y
-          CONFIG_PACKAGE_kmod-usb3=y
-          EOF 
+          # cat >> .config <<EOF
+          # CONFIG_PACKAGE_kmod-usb-ohci=y
+          # CONFIG_PACKAGE_kmod-usb-ohci-pci=y
+          # CONFIG_PACKAGE_kmod-usb2=y
+          # CONFIG_PACKAGE_kmod-usb2-pci=y
+          # CONFIG_PACKAGE_kmod-usb3=y
+          # EOF 
 
           # 常用LuCI插件选择:
           cat >> .config <<EOF
-          CONFIG_PACKAGE_luci-app-adbyby-plus=y
-          CONFIG_PACKAGE_luci-app-aria2=y
-          CONFIG_PACKAGE_luci-app-baidupcs-web=y
-          CONFIG_PACKAGE_luci-app-docker=y
+          # CONFIG_PACKAGE_luci-app-adbyby-plus=y
+          # CONFIG_PACKAGE_luci-app-aria2=y
+          # CONFIG_PACKAGE_luci-app-baidupcs-web=y
+          # CONFIG_PACKAGE_luci-app-docker=y
           CONFIG_PACKAGE_luci-app-frpc=y
-          CONFIG_PACKAGE_luci-app-hd-idle=y
+          # CONFIG_PACKAGE_luci-app-hd-idle=y
           # CONFIG_PACKAGE_luci-app-kodexplorer=y
           # CONFIG_PACKAGE_luci-app-minidlna=y
           # CONFIG_PACKAGE_luci-app-openvpn=y
